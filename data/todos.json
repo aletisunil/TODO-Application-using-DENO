@@ -1,0 +1,6 @@
+[
+  { "id": 1, "title": "Jogging", "completed": false },
+  { "id": 2, "title": "Complete React Application", "completed": false },
+  { "id": 3, "title": "Python ", "completed": false },
+  { "id": 4, "title": "Drink orange juice", "completed": true }
+]
