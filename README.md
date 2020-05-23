@@ -2,7 +2,7 @@
 **Run**
 
 ```
- deno run --allow-net --allow-read --allow-write ./index.js
+ deno run --allow-net=:5000 --allow-read=./data/todos.json --allow-write=./data/todos.json ./index.js
 ```
 
 ## **`GET`** - /todos
