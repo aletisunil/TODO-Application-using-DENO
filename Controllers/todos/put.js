@@ -10,7 +10,7 @@ export default async ({ response, request, params }) => {
     const todos = JSON.parse(decoder.decode(data));
 
     const updatedTodos = todos.map((todo) => {
-      if (todo.id === Number(params.id)) {
+      if (todo.id === params.id) {
         return { ...todo, title, completed };
       }
       return todo;

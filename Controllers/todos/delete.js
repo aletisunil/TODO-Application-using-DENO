@@ -6,7 +6,7 @@ export default async ({ response, params }) => {
     const data = await Deno.readFile(FilePath);
     const todos = JSON.parse(decoder.decode(data));
 
-    const updatedTodos = todos.filter((todo) => todo.id !== Number(params.id));
+    const updatedTodos = todos.filter((todo) => todo.id !== params.id);
     console.log(params.id);
     await Deno.writeFile(
       FilePath,
